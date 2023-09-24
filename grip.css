@@ -1,1 +1,13 @@
     .preview-page {margin-top: 8px !important;}  #readme > h3 {display:none;}
+
+@media print {
+    @page {
+        size: letter portrait;
+        mergin: 0.7in;
+    }
+    
+    h1,h2,h3,h4 {
+        page-break-after: avoid !important;
+    }
+}
+     
